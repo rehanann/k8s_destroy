@@ -16,6 +16,7 @@ pipeline {
              }
         stage('TF Apply') {
                 steps {
+                    sh 'pwd'
                     sh 'terraform init'
                     sh 'terraform destroy -auto-approve '
             }
